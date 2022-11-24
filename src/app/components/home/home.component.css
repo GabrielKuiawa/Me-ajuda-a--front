@@ -113,3 +113,13 @@ footer {
   justify-content: space-between;
   padding: 4rem 0;
 }
+
+@media (max-width: 767px) {
+  input {
+    width: 5rem;
+  }
+
+  #chat{
+    height:82vh;
+  }
+}

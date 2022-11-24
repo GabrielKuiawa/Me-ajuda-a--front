@@ -157,3 +157,14 @@ select:focus {
   align-items: center;
   justify-content: center;
 }
+
+@media (max-width: 767px) {
+  input {
+    width: 20rem;
+  }
+
+  #chat{
+    height:82vh;
+  }
+}
+
