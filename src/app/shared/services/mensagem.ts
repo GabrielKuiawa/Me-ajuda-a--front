@@ -1,3 +1,3 @@
-export interface Mensagem {
-  text: string;
+export class Mensagem {
+  text: string = "";
 }

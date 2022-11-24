@@ -1,12 +1,12 @@
 <div class="displayTable">
   <div class="displayTableCell">
     <div class="authBlock">
-      <h3>Sign In</h3>
+      <h3>Entrar</h3>
       <div class="formGroup">
         <input
           type="text"
           class="formControl"
-          placeholder="Username"
+          placeholder="usuário"
           #userName
           required
         />
@@ -16,7 +16,7 @@
         <input
           type="password"
           class="formControl"
-          placeholder="Password"
+          placeholder="senha"
           #userPassword
           required
         />
@@ -27,13 +27,9 @@
         <input
           type="button"
           class="btn btnPrimary"
-          value="Log in"
+          value="Entrar"
           (click)="authService.SignIn(userName.value, userPassword.value)"
         />
-      </div>
-
-      <div class="formGroup">
-        <span class="or"><span class="orInner">Or</span></span>
       </div>
 
       <!-- Calling GoogleAuth Api from AuthService -->
@@ -44,22 +40,22 @@
           (click)="authService.GoogleAuth()"
         >
           <i class="fab fa-google-plus-g"></i>
-          Log in with Google
+          Entar com Google
         </button>
       </div>
 
       <div class="forgotPassword">
-        <span routerLink="/forgot-password">Forgot Password?</span>
+        <span routerLink="/forgot-password">esqueceu a senha?</span>
       </div>
     </div>
 
     <div class="redirectToLogin">
       <span
-        >Don't have an account?<span
+        >Não tem uma conta?<span
           class="redirect"
           routerLink="/register-user"
         >
-          Sign Up</span
+        Inscrever-se</span
         ></span
       >
     </div>
