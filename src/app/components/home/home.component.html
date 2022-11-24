@@ -1,0 +1,60 @@
+<div class="container-home">
+  <section>
+    <h2>Me ajuda ae</h2>
+    <div style="display: flex ;">
+      <input style="  border-radius: 20px 0px 0px 20px;">
+      <button class="pesquisar" ><mat-icon>search</mat-icon></button>
+    </div>
+
+    <nav>
+      <ul>
+        <li><button mat-raised-button [routerLink]="['/chat']">Chat</button></li>
+        <li><button mat-raised-button [matMenuTriggerFor]="menu" #menuTrigger>Perfil</button></li>
+        <mat-menu #menu="matMenu">
+          <div style="height:350px;width: 270px;" class="perfil" *ngIf="authService.userData as user">
+            <img style="height: 5rem;"
+            class=" mr-5 img-thumbnail rounded-circle"
+            src="{{ user.photoURL ? user.photoURL : '/assets/dummy-user.png' }}"
+            alt="{{ user.displayName }}"
+            />
+
+              <div style="text-align: center; display: flex ; flex-direction: column;">
+                <div style="font-size: 20px;">
+                  Olá:
+                  <strong>{{ user.displayName ? user.displayName : "User" }}</strong>
+                </div>
+                <span style="font-size: 15px;">{{ user.email }}</span>
+              </div>
+
+            <button mat-raised-button (click)="authService.SignOut()"><i class="fas fa-sign-out-alt"></i>Log out</button>
+          </div>
+        </mat-menu>
+        <!-- <mat-icon class="botao" [matMenuTriggerFor]="menu">view_list</mat-icon>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>Português</button>
+          <button mat-menu-item>Matemática</button>
+          <button mat-menu-item>Biologia</button>
+          <button mat-menu-item>Química</button>
+          <button mat-menu-item>Física</button>
+          <button mat-menu-item>Educação Física</button>
+        </mat-menu> -->
+      </ul>
+    </nav>
+  </section>
+  <div class="descricao" style="display: flex; flex-wrap: wrap">
+    <h3>
+      O intuito do projeto incentivar cada vez mais os alunos com as atividades
+      escolares,e com isso foi desenvolvido esse sistema no qual ajudaria a
+      realizar-los
+    </h3>
+  </div>
+
+  <footer>
+    <div class="text-center p-3" style="display: flex; flex-direction: column">
+      <p>© 2022 Copyright</p>
+      <p>Desenvolvedores: Alan Gabriel Kuiawa e Maria Eduarda Guedes</p>
+    </div>
+  </footer>
+</div>
+
+<!--descrição-->

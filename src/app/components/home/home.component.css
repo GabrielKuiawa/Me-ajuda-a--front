@@ -1,0 +1,115 @@
+body,
+ul,
+li,
+p {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-size: 1.2rem;
+}
+
+li {
+  list-style: none;
+  margin: 10px;
+
+}
+
+ul {
+  display: flex;
+  justify-content: end;
+
+}
+
+.botao {
+  display: flex;
+  justify-content: end;
+  margin: 15px;
+}
+
+section,
+nav {
+  background-color: #159A9C;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.pesquisa_input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+
+  width: 40rem;
+  border-radius: 5px;
+  height: 2rem;
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+
+.pesquisar {
+  border-radius: 0px 20px 20px 0px;
+  background-color: gold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+textarea:focus,
+input:focus,
+select:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+
+.search {
+  background-color: yellow;
+  align-items: center;
+  padding-left: 650px;
+  height: 30px;
+  width: 8px;
+}
+
+.descricao {
+  background-color: #2cb0b3;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+h3 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.container-home {
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+footer {
+  background: #159A9C;
+  margin-top: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 5rem;
+}
+
+.perfil {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 4rem 0;
+}
