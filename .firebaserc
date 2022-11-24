@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "me-ajuda-ae-664ca": {
+      "hosting": {
+        "me_ajuda_ae": [
+          "me-ajuda-ae-664ca"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "me-ajuda-ae-664ca"
+  }
+}
