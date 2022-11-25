@@ -14,8 +14,8 @@
     <ul id="chat">
       <li class="me" *ngFor="let mensagem of mensagens | async">
         <div class="entete">
-          <h3>10:12AM, Today</h3>
-          <h2>Vincent</h2>
+          <h3>{{ mensagem.date }} </h3>
+          <h2> {{ " " + mensagem.nameUser }}</h2>
           <span class="status blue"></span>
         </div>
         <div class="message">
@@ -26,11 +26,11 @@
   </main>
   <footer>
     <div style="display: flex">
-      <input
+      <input #searchCollectorInput
         [(ngModel)]="mensagem.text"
         style="border-radius: 20px 0px 0px 20px"
       />
-      <button (click)="onSubimit()" class="pesquisar">
+      <button (click)="onSubimit()" (click)="searchCollectorInput.value = '';" type="submit" class="pesquisar">
         <mat-icon>send</mat-icon>
       </button>
     </div>
